@@ -1,9 +1,9 @@
 /* Start nav */
 //create nav items
-let nav = document.getElementById("nav");
+var nav = document.getElementById("nav");
 for (var i = 1; i <= 4; i++) {
     //creat li tages
-    let newLi = document.createElement("li");
+    var newLi = document.createElement("li");
     //append a to li
     newLi.innerHTML = " <a>Section </a> " + i;
     //append li to nav
@@ -11,8 +11,8 @@ for (var i = 1; i <= 4; i++) {
 }
 
 //scroll
-let Li = document.getElementsByTagName("Li");
-let section = document.querySelectorAll('.section');
+var Li = document.getElementsByTagName("Li");
+var section = document.querySelectorAll('.section');
 
 //when click li scroll to the section 
 Li[0].addEventListener('click', () => {
@@ -31,9 +31,9 @@ Li[3].addEventListener('click', () => {
     section[3].scrollIntoView();
 });
 
-let sections = document.getElementsByTagName('section');
+var sections = document.getElementsByTagName('section');
 onscroll = () => {
-    let scrollPosation = document.documentElement.scrollTop;
+    var scrollPosation = document.documentElement.scrollTop;
     
     //when scroll to the section .... the section get the class active and remove class disactive
     //the nav item of section whic you scroll into will get class active 
@@ -52,7 +52,7 @@ onscroll = () => {
 
     // button show or hide 
     //when scroll 100px the button eill apper
-    let button = document.getElementById("button");
+    var button = document.getElementById("button");
     if (scrollPosation >= 100) {
         button.classList.add("show");
     } else {
@@ -63,7 +63,7 @@ onscroll = () => {
 /* End nav */
 
 /* Start mobile menu */
-let mobileMenu = document.getElementById("mobile_menu");
+var mobileMenu = document.getElementById("mobile_menu");
 mobileMenu.addEventListener("click", () => {
     mobileMenu.classList.toggle("open");
     nav.classList.toggle("mobile");

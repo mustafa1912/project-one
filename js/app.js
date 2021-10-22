@@ -1,10 +1,12 @@
 /* Start nav */
-//create nav
-
+//create nav items
 let nav = document.getElementById("nav");
 for (var i = 1; i <= 4; i++) {
+    //creat li tages
     let newLi = document.createElement("li");
+    //append a to li
     newLi.innerHTML = " <a>Section </a> " + i;
+    //append li to nav
     nav.appendChild(newLi);
 }
 
@@ -12,7 +14,7 @@ for (var i = 1; i <= 4; i++) {
 let Li = document.getElementsByTagName("Li");
 let section = document.querySelectorAll('.section');
 
-
+//when click li scroll to the section 
 Li[0].addEventListener('click', () => {
     section[0].scrollIntoView();
 });
@@ -32,7 +34,9 @@ Li[3].addEventListener('click', () => {
 let sections = document.getElementsByTagName('section');
 onscroll = () => {
     let scrollPosation = document.documentElement.scrollTop;
-
+    
+    //when scroll to the section .... the section get the class active and remove class disactive
+    //the nav item of section whic you scroll into will get class active 
     for (var i = 0; i <= 3; i++) {
         if (scrollPosation > (sections[i].offsetTop - 70) &&
             scrollPosation < (sections[i].offsetTop + sections[i].clientHeight)) {
@@ -47,6 +51,7 @@ onscroll = () => {
     }
 
     // button show or hide 
+    //when scroll 100px the button eill apper
     let button = document.getElementById("button");
     if (scrollPosation >= 100) {
         button.classList.add("show");

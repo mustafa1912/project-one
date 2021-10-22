@@ -21,10 +21,12 @@ body {
         width: 80%;
     }
     .section-border-left {
+        height: 300px;
         transform: translate(50%, 180%);
         width: 20%;
     }
     .section-border-right {
+        height: 300px;
         transform: translate(-50%, 180%);
         width: 20%;
     }
@@ -41,10 +43,12 @@ body {
         width: 80%;
     }
     .section-border-left {
+        height: 300px;
         transform: translate(50%, 130%);
         width: 20%;
     }
     .section-border-right {
+        height: 300px;
         transform: translate(-50%, 130%);
         width: 20%;
     }
@@ -61,10 +65,12 @@ body {
         width: 50%;
     }
     .section-border-left {
+        height: 600px;
         transform: translate(50%, 150%);
         width: 50%;
     }
     .section-border-right {
+        height: 600px;
         transform: translate(-50%, 150%);
         width: 50%;
     }
@@ -81,10 +87,12 @@ body {
         width: 50%;
     }
     .section-border-left {
+        height: 600px;
         transform: translate(50%, 100%);
         width: 50%;
     }
     .section-border-right {
+        height: 600px;
         transform: translate(-50%, 100%);
         width: 50%;
     }
@@ -101,10 +109,12 @@ body {
         width: 50%;
     }
     .section-border-left {
+        height: 600px;
         transform: translate(50%, 100%);
         width: 50%;
     }
     .section-border-right {
+        height: 600px;
         transform: translate(-50%, 100%);
         width: 50%;
     }
@@ -305,14 +315,12 @@ section .section p {
 /**/
 
 .section-border-right {
-    height: 600px;
     border: 10px solid #0D6EFD;
     border-radius: 10px;
     z-index: 1;
 }
 
 .section-border-left {
-    height: 600px;
     border: 10px solid #FFD00A;
     border-radius: 10px;
     z-index: 1;

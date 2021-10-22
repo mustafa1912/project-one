@@ -34,7 +34,7 @@ onscroll = () => {
     let scrollPosation = document.documentElement.scrollTop;
 
     for (var i = 0; i <= 3; i++) {
-        if (scrollPosation > sections[i].offsetTop &&
+        if (scrollPosation > (sections[i].offsetTop - 70) &&
             scrollPosation < (sections[i].offsetTop + sections[i].clientHeight)) {
             console.log(scrollPosation);
             section[i].classList.add('active');

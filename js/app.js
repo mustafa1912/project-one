@@ -36,16 +36,23 @@ onscroll = () => {
     for (var i = 0; i <= 3; i++) {
         if (scrollPosation > sections[i].offsetTop &&
             scrollPosation < (sections[i].offsetTop + sections[i].clientHeight)) {
-
+            console.log(scrollPosation);
             section[i].classList.add('active');
             section[i].classList.remove('disactive');
             Li[i].classList.add('active_nav');
-
         } else {
             section[i].classList.add('disactive');
             section[i].classList.remove('active');
             Li[i].classList.remove('active_nav');
         }
+    }
+
+    // button show or hide 
+    let button = document.getElementById("button");
+    if (scrollPosation >= 100) {
+        button.classList.add("show");
+    } else {
+        button.classList.remove("show");
     }
 }
 
@@ -60,17 +67,8 @@ mobileMenu.addEventListener("click", () => {
 /* End mobile menu */
 
 
-/* Start scroll*/
-let button = document.getElementById("button");
-onscroll = () => {
-    if (document.documentElement.scrollTop >= 100) {
-        button.classList.add("show");
-    } else {
-        button.classList.remove("show");
-    }
-}
+
+// button up or down 
 button.addEventListener('click', () => {
     window.scroll(0, 0)
 })
-
-/*End scroll*/

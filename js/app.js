@@ -10,7 +10,7 @@ for (var i = 1; i <= 4; i++) {
     nav.appendChild(newLi);
 }
 
-//scroll
+/* scroll */
 var Li = document.getElementsByTagName("Li");
 var section = document.querySelectorAll('.section');
 

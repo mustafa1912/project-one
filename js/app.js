@@ -15,20 +15,24 @@ var Li = document.getElementsByTagName("Li");
 var section = document.querySelectorAll('.section');
 
 //when click li scroll to the section 
-Li[0].addEventListener('click', () => {
-    section[0].scrollIntoView();
+Li[0].addEventListener('click', (event) => {
+    event.preventDefault();
+    section[0].scrollIntoView({ behavior: "smooth", block: "center" });
 });
 
-Li[1].addEventListener('click', () => {
-    section[1].scrollIntoView();
+Li[1].addEventListener('click', (event) => {
+    event.preventDefault();
+    section[1].scrollIntoView({ behavior: "smooth", block: "center" });
 });
 
-Li[2].addEventListener('click', () => {
-    section[2].scrollIntoView();
+Li[2].addEventListener('click', (event) => {
+    event.preventDefault();
+    section[2].scrollIntoView({ behavior: "smooth", block: "center" });
 });
 
-Li[3].addEventListener('click', () => {
-    section[3].scrollIntoView();
+Li[3].addEventListener('click', (event) => {
+    event.preventDefault();
+    section[3].scrollIntoView({ behavior: "smooth", block: "center" });
 });
 
 var sections = document.getElementsByTagName('section');
@@ -73,6 +77,10 @@ mobileMenu.addEventListener("click", () => {
 
 
 // button up or down 
-button.addEventListener('click', () => {
-    window.scroll(0, 0)
+button.addEventListener('click', (event) => {
+    event.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 })

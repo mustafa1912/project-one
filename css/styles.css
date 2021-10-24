@@ -10,6 +10,7 @@ body {
 
 /* Start responsible */
 
+/*on scrreen less than 576px*/
 @media (max-width: 576px) {
     .none {
         display: none;
@@ -32,6 +33,7 @@ body {
     }
 }
 
+/*on scrreen more than 576px  */
 @media (min-width: 576px) {
     .none {
         display: none;
@@ -53,6 +55,9 @@ body {
         width: 20%;
     }
 }
+
+
+/*on scrreen more than 768px*/
 
 @media (min-width: 768px) {
     .none {
@@ -76,6 +81,8 @@ body {
     }
 }
 
+/*on scrreen more than 992px*/
+
 @media (min-width: 992px) {
     .none {
         display: flex;
@@ -97,6 +104,10 @@ body {
         width: 50%;
     }
 }
+
+
+
+/*on scrreen more than 1200px*/
 
 @media (min-width: 1200px) {
     .none {
@@ -135,6 +146,7 @@ header {
     z-index: 5;
 }
 
+
 header .container {
     width: 85%;
     margin: auto;
@@ -142,7 +154,7 @@ header .container {
     align-content: center;
     justify-content: space-between;
 }
-
+/*logo */
 header img {
     margin-top: 10px;
 }
@@ -158,7 +170,7 @@ nav ul {
     justify-content: flex-end;
     padding-left: 80px;
 }
-
+/*the nav in the mobile screen */
 .mobile {
     display: flex;
     justify-content: flex-end;
@@ -194,6 +206,7 @@ li:hover a {
     color: #000;
 }
 
+/*icon mobile*/
 .mobile_menu {
     cursor: pointer;
     margin-top: auto;
@@ -237,7 +250,7 @@ li:hover a {
 
 
 /* Start section */
-
+/* the main section */
 section {
     width: 85%;
     margin: auto;
@@ -253,11 +266,11 @@ section .section {
     box-shadow: 0px 0px 16px 13px rgb(211, 210, 210);
     z-index: 2;
 }
-
+/* class make section dis active when scroll out it */
 .disactive {
     background-color: rgb(221, 220, 220);
 }
-
+/* class make section dis active when scroll in it */
 .active {
     background-color: rgb(255, 255, 255);
 }
@@ -273,14 +286,14 @@ hr {
 
 
 /*animation*/
-
+/* make animation to the section were in the left  */
 #section_1,
 #section_3 {
     animation-name: animation-left;
     animation-timing-function: ease;
     animation-duration: 4s;
 }
-
+/* make animation to the section were in the left  */
 #section_2,
 #section_4 {
     animation-name: animation-right;
@@ -288,11 +301,7 @@ hr {
     animation-duration: 4s;
 }
 
-section .section p {
-    line-height: 28px;
-    text-align: justify;
-}
-
+/* make animation for the section */
 @keyframes animation-left {
     0% {
         transform: translateX(-100px);
@@ -310,33 +319,34 @@ section .section p {
         transform: translateX(0px);
     }
 }
+/* paragraf */
+section .section p {
+    line-height: 28px;
+    text-align: justify;
+}
 
-
-/**/
-
+/*section borde blude */
 .section-border-right {
     border: 10px solid #0D6EFD;
     border-radius: 10px;
     z-index: 1;
 }
-
+/*section borde yellow */
 .section-border-left {
     border: 10px solid #FFD00A;
     border-radius: 10px;
     z-index: 1;
 }
-
-
 /* End section  */
 
 
 /* button*/
-
 .button-section {
     width: 85%;
     margin: auto;
 }
 
+/* button up */
 .button {
     border: none;
     background-color: #0D6EFD;
@@ -353,13 +363,13 @@ section .section p {
     z-index: 6;
     transition: 0.8s;
 }
-
+/* when the mouse moveon the botten */
 button:hover {
     background-color: #FFD00A;
     color: black;
     border-radius: 5px;
 }
-
+/* class wiil add to the button when secroll down */
 .show {
     right: 50px;
 }
